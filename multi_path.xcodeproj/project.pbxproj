@@ -17,9 +17,13 @@
 		B060B7E720BC0624001FD0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B060B7E620BC0624001FD0CE /* Assets.xcassets */; };
 		B060B7EA20BC0624001FD0CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B060B7E820BC0624001FD0CE /* LaunchScreen.storyboard */; };
 		B060B7ED20BC0624001FD0CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B060B7EC20BC0624001FD0CE /* main.m */; };
+		D89DA85BA115CFA555ED8AC6 /* libPods-multi_path.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B833461B8F7AE6A48BA6CB /* libPods-multi_path.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28B833461B8F7AE6A48BA6CB /* libPods-multi_path.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-multi_path.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32391C4D6051C2F70EBC8CBF /* Pods-multi_path.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-multi_path.debug.xcconfig"; path = "Pods/Target Support Files/Pods-multi_path/Pods-multi_path.debug.xcconfig"; sourceTree = "<group>"; };
+		67A884E3C32ADD7E49146F37 /* Pods-multi_path.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-multi_path.release.xcconfig"; path = "Pods/Target Support Files/Pods-multi_path/Pods-multi_path.release.xcconfig"; sourceTree = "<group>"; };
 		83B0727420CC615700F17CA6 /* Execute.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Execute.c; sourceTree = "<group>"; };
 		83B0727520CC615700F17CA6 /* Execute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Execute.h; sourceTree = "<group>"; };
 		B00730BB20C723AE005995FA /* offsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = offsets.m; sourceTree = "<group>"; };
@@ -46,17 +50,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89DA85BA115CFA555ED8AC6 /* libPods-multi_path.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B9087A24D1A497E7F2EDB9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32391C4D6051C2F70EBC8CBF /* Pods-multi_path.debug.xcconfig */,
+				67A884E3C32ADD7E49146F37 /* Pods-multi_path.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B060B7D120BC0624001FD0CE = {
 			isa = PBXGroup;
 			children = (
 				B060B7DC20BC0624001FD0CE /* multi_path */,
 				B060B7DB20BC0624001FD0CE /* Products */,
+				9B9087A24D1A497E7F2EDB9B /* Pods */,
+				FEC84B86C67283D6BA7E077E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +109,14 @@
 			path = multi_path;
 			sourceTree = "<group>";
 		};
+		FEC84B86C67283D6BA7E077E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28B833461B8F7AE6A48BA6CB /* libPods-multi_path.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B060B7F020BC0624001FD0CE /* Build configuration list for PBXNativeTarget "multi_path" */;
 			buildPhases = (
+				27EDC2CBCF76EF7C18D056CA /* [CP] Check Pods Manifest.lock */,
 				B060B7D620BC0624001FD0CE /* Sources */,
 				B060B7D720BC0624001FD0CE /* Frameworks */,
 				B060B7D820BC0624001FD0CE /* Resources */,
+				2C4EFD1F0FA2B186FE3B3654 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,6 +190,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27EDC2CBCF76EF7C18D056CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-multi_path-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C4EFD1F0FA2B186FE3B3654 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-multi_path/Pods-multi_path-resources.sh",
+				"${PODS_ROOT}/FallingSnow/FallingSnow/Resources/XMASSnowflake.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/XMASSnowflake.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-multi_path/Pods-multi_path-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B060B7D620BC0624001FD0CE /* Sources */ = {
@@ -307,6 +372,7 @@
 		};
 		B060B7F120BC0624001FD0CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32391C4D6051C2F70EBC8CBF /* Pods-multi_path.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = multi_path/multi_path.entitlements;
@@ -323,6 +389,7 @@
 		};
 		B060B7F220BC0624001FD0CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A884E3C32ADD7E49146F37 /* Pods-multi_path.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = multi_path/multi_path.entitlements;

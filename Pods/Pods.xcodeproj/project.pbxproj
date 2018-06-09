@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E774B785C0474432869F0E6A4EBDE6A /* UIView+XMASFallingSnow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B0F592D1E051DCA43E746B433B75F62 /* UIView+XMASFallingSnow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3DD96C32F73F6BB5F1A1C3DF7C6AC0FE /* XMASFallingSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF002ED86482C2DFDF638FEC201B598 /* XMASFallingSnowView.m */; };
+		488DEC693D30306B7BB1F72D25FE2319 /* UIView+XMASFallingSnow.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3FA53AB72157738C66E7A9BD938057 /* UIView+XMASFallingSnow.m */; };
+		52AF487D65F70222F9FAC34897A562BA /* FallingSnow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D568ED44B7FD1B7653FE7C8487CEF4 /* FallingSnow-dummy.m */; };
+		70A5A056763F478D13DBCCD855EFC6BD /* FallingSnow.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FEFCCED3ABD40CD96C05DFCA36128D4 /* FallingSnow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D9C70F46007E1EEEED272F845776390A /* Pods-multi_path-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C157959C9D6751802F60F910C5FBE24D /* Pods-multi_path-dummy.m */; };
+		DE7DFA6085E6C68C1D8F1629B82A28DE /* XMASFallingSnowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 295EFD27F1104E70726FB569AA200D94 /* XMASFallingSnowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C746263B6F8E60904814B878EE74E63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F98395B920DD8B7C3BB7BC10886CCB37;
+			remoteInfo = FallingSnow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17C6E963518C997337E635273246EB58 /* FallingSnow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FallingSnow.xcconfig; sourceTree = "<group>"; };
+		19D568ED44B7FD1B7653FE7C8487CEF4 /* FallingSnow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FallingSnow-dummy.m"; sourceTree = "<group>"; };
+		1B0F592D1E051DCA43E746B433B75F62 /* UIView+XMASFallingSnow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+XMASFallingSnow.h"; path = "FallingSnow/UIView+XMASFallingSnow.h"; sourceTree = "<group>"; };
+		202A73F1B3D569B288B1D522E7203838 /* Pods-multi_path-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-multi_path-resources.sh"; sourceTree = "<group>"; };
+		295EFD27F1104E70726FB569AA200D94 /* XMASFallingSnowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMASFallingSnowView.h; path = FallingSnow/XMASFallingSnowView.h; sourceTree = "<group>"; };
+		2DF002ED86482C2DFDF638FEC201B598 /* XMASFallingSnowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMASFallingSnowView.m; path = FallingSnow/XMASFallingSnowView.m; sourceTree = "<group>"; };
+		3CC6430667C1D4CD067E786AF5EA5490 /* XMASSnowflake.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = XMASSnowflake.png; path = FallingSnow/Resources/XMASSnowflake.png; sourceTree = "<group>"; };
+		4D3226B5BFE90976B83AFFA143916474 /* Pods-multi_path-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-multi_path-acknowledgements.markdown"; sourceTree = "<group>"; };
+		59D9CC71EC848A944FD7B2ABA18887CA /* Pods-multi_path.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-multi_path.release.xcconfig"; sourceTree = "<group>"; };
+		6B7D66B15F75147DC13D47F009985DC8 /* FallingSnow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FallingSnow-prefix.pch"; sourceTree = "<group>"; };
+		6F9669C9897DCA52662BD170A7E5AD01 /* libPods-multi_path.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-multi_path.a"; path = "libPods-multi_path.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FEFCCED3ABD40CD96C05DFCA36128D4 /* FallingSnow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FallingSnow.h; path = FallingSnow/FallingSnow.h; sourceTree = "<group>"; };
+		7D6640D9C8904AF1BBB7AE4F55D72375 /* libFallingSnow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFallingSnow.a; path = libFallingSnow.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BD3FA53AB72157738C66E7A9BD938057 /* UIView+XMASFallingSnow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+XMASFallingSnow.m"; path = "FallingSnow/UIView+XMASFallingSnow.m"; sourceTree = "<group>"; };
+		C157959C9D6751802F60F910C5FBE24D /* Pods-multi_path-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-multi_path-dummy.m"; sourceTree = "<group>"; };
+		CCFE0D5C7C63122D324C1C3233823594 /* Pods-multi_path.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-multi_path.debug.xcconfig"; sourceTree = "<group>"; };
+		D92EE7AEFCE851FEB6859707F13830BB /* Pods-multi_path-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-multi_path-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2E2004969614E1550E49BB0040B23EB /* Pods-multi_path-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-multi_path-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D73F2B3266CC15082F725104C313266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D141D6D65CDAB4A3DA798125012D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0FD29F3DC0858AE3513D77E6947D67C3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				17C6E963518C997337E635273246EB58 /* FallingSnow.xcconfig */,
+				19D568ED44B7FD1B7653FE7C8487CEF4 /* FallingSnow-dummy.m */,
+				6B7D66B15F75147DC13D47F009985DC8 /* FallingSnow-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FallingSnow";
+			sourceTree = "<group>";
+		};
+		14EA4B96B48BFAF6D0551D4C3FAD4686 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB04A5D84112545DCD0BE439056DDCD4 /* Pods-multi_path */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5C60F2074FBE192382537BC7A5C9F074 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7DD954312DAFF520AF36844C408646D /* FallingSnow */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75D3EB59B00E8BD54FA2558889EFF41E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3CC6430667C1D4CD067E786AF5EA5490 /* XMASSnowflake.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				5C60F2074FBE192382537BC7A5C9F074 /* Pods */,
+				F4BF5F7F9620A88838A9B4D4C22888F1 /* Products */,
+				14EA4B96B48BFAF6D0551D4C3FAD4686 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CB04A5D84112545DCD0BE439056DDCD4 /* Pods-multi_path */ = {
+			isa = PBXGroup;
+			children = (
+				4D3226B5BFE90976B83AFFA143916474 /* Pods-multi_path-acknowledgements.markdown */,
+				D92EE7AEFCE851FEB6859707F13830BB /* Pods-multi_path-acknowledgements.plist */,
+				C157959C9D6751802F60F910C5FBE24D /* Pods-multi_path-dummy.m */,
+				F2E2004969614E1550E49BB0040B23EB /* Pods-multi_path-frameworks.sh */,
+				202A73F1B3D569B288B1D522E7203838 /* Pods-multi_path-resources.sh */,
+				CCFE0D5C7C63122D324C1C3233823594 /* Pods-multi_path.debug.xcconfig */,
+				59D9CC71EC848A944FD7B2ABA18887CA /* Pods-multi_path.release.xcconfig */,
+			);
+			name = "Pods-multi_path";
+			path = "Target Support Files/Pods-multi_path";
+			sourceTree = "<group>";
+		};
+		F4BF5F7F9620A88838A9B4D4C22888F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D6640D9C8904AF1BBB7AE4F55D72375 /* libFallingSnow.a */,
+				6F9669C9897DCA52662BD170A7E5AD01 /* libPods-multi_path.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7DD954312DAFF520AF36844C408646D /* FallingSnow */ = {
+			isa = PBXGroup;
+			children = (
+				6FEFCCED3ABD40CD96C05DFCA36128D4 /* FallingSnow.h */,
+				1B0F592D1E051DCA43E746B433B75F62 /* UIView+XMASFallingSnow.h */,
+				BD3FA53AB72157738C66E7A9BD938057 /* UIView+XMASFallingSnow.m */,
+				295EFD27F1104E70726FB569AA200D94 /* XMASFallingSnowView.h */,
+				2DF002ED86482C2DFDF638FEC201B598 /* XMASFallingSnowView.m */,
+				75D3EB59B00E8BD54FA2558889EFF41E /* Resources */,
+				0FD29F3DC0858AE3513D77E6947D67C3 /* Support Files */,
+			);
+			name = FallingSnow;
+			path = FallingSnow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A16AB7698B7D9F36D97C6F502BA1308A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A5A056763F478D13DBCCD855EFC6BD /* FallingSnow.h in Headers */,
+				0E774B785C0474432869F0E6A4EBDE6A /* UIView+XMASFallingSnow.h in Headers */,
+				DE7DFA6085E6C68C1D8F1629B82A28DE /* XMASFallingSnowView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7E1EF831E92EAC2998FF4B7AAE9A6C12 /* Pods-multi_path */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2631E3A1068037094F91172C41F1E3A3 /* Build configuration list for PBXNativeTarget "Pods-multi_path" */;
+			buildPhases = (
+				72B3A20FCECCB0839060B33F77CF6436 /* Sources */,
+				0D73F2B3266CC15082F725104C313266 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74EE17CDB911DE3E3507D4A2BFE222DC /* PBXTargetDependency */,
+			);
+			name = "Pods-multi_path";
+			productName = "Pods-multi_path";
+			productReference = 6F9669C9897DCA52662BD170A7E5AD01 /* libPods-multi_path.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F98395B920DD8B7C3BB7BC10886CCB37 /* FallingSnow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C926234759C387F28A5103D1ABD7CE57 /* Build configuration list for PBXNativeTarget "FallingSnow" */;
+			buildPhases = (
+				92092DF3E75A88BFBE70F1EA90069178 /* Sources */,
+				69D141D6D65CDAB4A3DA798125012D5F /* Frameworks */,
+				A16AB7698B7D9F36D97C6F502BA1308A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FallingSnow;
+			productName = FallingSnow;
+			productReference = 7D6640D9C8904AF1BBB7AE4F55D72375 /* libFallingSnow.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F4BF5F7F9620A88838A9B4D4C22888F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F98395B920DD8B7C3BB7BC10886CCB37 /* FallingSnow */,
+				7E1EF831E92EAC2998FF4B7AAE9A6C12 /* Pods-multi_path */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72B3A20FCECCB0839060B33F77CF6436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C70F46007E1EEEED272F845776390A /* Pods-multi_path-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92092DF3E75A88BFBE70F1EA90069178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52AF487D65F70222F9FAC34897A562BA /* FallingSnow-dummy.m in Sources */,
+				488DEC693D30306B7BB1F72D25FE2319 /* UIView+XMASFallingSnow.m in Sources */,
+				3DD96C32F73F6BB5F1A1C3DF7C6AC0FE /* XMASFallingSnowView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74EE17CDB911DE3E3507D4A2BFE222DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FallingSnow;
+			target = F98395B920DD8B7C3BB7BC10886CCB37 /* FallingSnow */;
+			targetProxy = 0C746263B6F8E60904814B878EE74E63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		928A038EAFDB2972DB1FE9C94D5FC641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C6E963518C997337E635273246EB58 /* FallingSnow.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FallingSnow/FallingSnow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FallingSnow;
+				PRODUCT_NAME = FallingSnow;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A2DEDB47D3E4E8D6DB52355E13165E8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C6E963518C997337E635273246EB58 /* FallingSnow.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FallingSnow/FallingSnow-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FallingSnow;
+				PRODUCT_NAME = FallingSnow;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB4A08E00F27CD3B018AEF50980A98C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D9CC71EC848A944FD7B2ABA18887CA /* Pods-multi_path.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE5395E051F64C503D772F6CE08C5E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFE0D5C7C63122D324C1C3233823594 /* Pods-multi_path.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2631E3A1068037094F91172C41F1E3A3 /* Build configuration list for PBXNativeTarget "Pods-multi_path" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5395E051F64C503D772F6CE08C5E21 /* Debug */,
+				CB4A08E00F27CD3B018AEF50980A98C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C926234759C387F28A5103D1ABD7CE57 /* Build configuration list for PBXNativeTarget "FallingSnow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928A038EAFDB2972DB1FE9C94D5FC641 /* Debug */,
+				A2DEDB47D3E4E8D6DB52355E13165E8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - FallingSnow (1.0.0)
+
+DEPENDENCIES:
+  - FallingSnow (~> 1.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FallingSnow
+
+SPEC CHECKSUMS:
+  FallingSnow: 045acddee33a634b9f738eddf0e2214134372bfa
+
+PODFILE CHECKSUM: 5210edc42aac5f9a1af47f015965bb18411e9501
+
+COCOAPODS: 1.5.3
