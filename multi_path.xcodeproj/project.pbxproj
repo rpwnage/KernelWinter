@@ -17,6 +17,7 @@
 		B060B7E720BC0624001FD0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B060B7E620BC0624001FD0CE /* Assets.xcassets */; };
 		B060B7EA20BC0624001FD0CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B060B7E820BC0624001FD0CE /* LaunchScreen.storyboard */; };
 		B060B7ED20BC0624001FD0CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B060B7EC20BC0624001FD0CE /* main.m */; };
+		C07CF11020CC9ABB0041BE06 /* LemonMilk.otf in Resources */ = {isa = PBXBuildFile; fileRef = C07CF10F20CC9ABB0041BE06 /* LemonMilk.otf */; };
 		D89DA85BA115CFA555ED8AC6 /* libPods-multi_path.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B833461B8F7AE6A48BA6CB /* libPods-multi_path.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		B060B7EB20BC0624001FD0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B060B7EC20BC0624001FD0CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B060B7F320BC063F001FD0CE /* multi_path.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = multi_path.entitlements; sourceTree = "<group>"; };
+		C07CF10F20CC9ABB0041BE06 /* LemonMilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilk.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				83B0727520CC615700F17CA6 /* Execute.h */,
 				B00730BE20C72BCB005995FA /* kmem.h */,
 				B00730BF20C730BC005995FA /* README */,
+				C07CF10F20CC9ABB0041BE06 /* LemonMilk.otf */,
 			);
 			path = multi_path;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				B00730C020C730BC005995FA /* README in Resources */,
 				B060B7EA20BC0624001FD0CE /* LaunchScreen.storyboard in Resources */,
 				B060B7E720BC0624001FD0CE /* Assets.xcassets in Resources */,
+				C07CF11020CC9ABB0041BE06 /* LemonMilk.otf in Resources */,
 				B060B7E520BC0624001FD0CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
