@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "../Pods/FallingSnow/FallingSnow/FallingSnow.h"
+#import "../Pods/FallingSnow/FallingSnow/XMASFallingSnowView.h"
+#import "../Pods/FallingSnow/FallingSnow/UIView+XMASFallingSnow.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +18,9 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+    XMASFallingSnowView *snowOverlay = [[XMASFallingSnowView alloc] initWithFrame:self.view.frame];
+      [self.view addSubview:snowOverlay];
+      [snowOverlay beginSnowAnimation];
   [self.SpinningWheel startAnimating];
 }
 
