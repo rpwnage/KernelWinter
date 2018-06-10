@@ -1002,6 +1002,7 @@ void go() {
   printf("done!\n");
     
     //external function come here
-  run_arb();
+    get_kernel_task();
+
 }
 

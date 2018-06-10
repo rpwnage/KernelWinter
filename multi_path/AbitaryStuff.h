@@ -13,5 +13,7 @@
 
 int run_arb(void);
 int list_bin_files(void);
-
+int get_kernel_task(void);
+void write_test(int task);
+void read_test(int reading);
 #endif /* AbitaryStuff_h */
