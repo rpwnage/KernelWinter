@@ -49,21 +49,7 @@
     return 0;
 }
 
-- (void) test_read {
-    NSFileManager *filemgr;
-    NSString *currentpath;
-    NSArray *filelist;
-    int i;
-    filemgr = [NSFileManager defaultManager];
-    filelist = [filemgr contentsOfDirectoryAtPath: @"/bin/" error: nil];
-    NSInteger *count = [filelist count];
-    for (i = 0; i < count; i++)
-       // NSLog (@"%@", [filelist objectAtIndex: i]);
-        self.Console.text = [_Console.text stringByAppendingString:(@"\n %@", [filelist objectAtIndex: i])];
-
-}
-
-int start_SFTP(){
+void start_SFTP(){
 
 }
 
