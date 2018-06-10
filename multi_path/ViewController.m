@@ -10,7 +10,18 @@
 #import "../Pods/FallingSnow/FallingSnow/FallingSnow.h"
 #import "../Pods/FallingSnow/FallingSnow/XMASFallingSnowView.h"
 #import "../Pods/FallingSnow/FallingSnow/UIView+XMASFallingSnow.h"
+
+
+
+
+
+
+
+
 @interface ViewController ()
+
+
+
 
 @end
 
@@ -23,6 +34,7 @@
       [snowOverlay beginSnowAnimation];
   [self.SpinningWheel startAnimating];
     go();
+    _Console.text = [_Console.text stringByAppendingString:@"\nftp0 done!"];
 }
 
 

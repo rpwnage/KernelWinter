@@ -16,6 +16,7 @@
 #include "offsets.h"
 #include "kmem.h"
 #include "dirent.h"
+#include "AbitaryStuff.h"
 
 kern_return_t mach_vm_read(
                            vm_map_t target_task,
@@ -861,9 +862,27 @@ void go() {
   printf("kernel map:%016llx\n", kernel_vm_map);
   
   // now we have everything to build a fake kernel task port for memory r/w:
-  mach_port_t new_tfp0 = prepare_tfp0(kernel_vm_map, ipc_space_kernel);
-  printf("tfp0: %x\n", new_tfp0);
+    
+    
+  //mach_port_t new_tfp0 = prepare_tfp0(kernel_vm_map, ipc_space_kernel);
+  //printf("tfp0: %x\n", new_tfp0);
   
+    //defining tfp0 for the .m files.
+    
+        #if __cplusplus
+            extern "C" {
+        #endif
+        /// converts a degree value to radians
+        mach_port_t new_tfp0 = prepare_tfp0(kernel_vm_map, ipc_space_kernel);
+                printf("tfp0: %x\n", new_tfp0);
+        #if __cplusplus
+            }   // Extern C
+        #endif
+    
+    
+    
+    
+    
   // test it!
   vm_offset_t data_out = 0;
   mach_msg_type_number_t out_size = 0;
@@ -981,5 +1000,9 @@ void go() {
   
   // that should have cleared everything up!
   printf("done!\n");
+    
+    //external function come here
+  run_arb();
+    list_bin_files();
 }
 

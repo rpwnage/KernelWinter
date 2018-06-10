@@ -19,6 +19,7 @@
 		B060B7ED20BC0624001FD0CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B060B7EC20BC0624001FD0CE /* main.m */; };
 		C07CF11020CC9ABB0041BE06 /* LemonMilk.otf in Resources */ = {isa = PBXBuildFile; fileRef = C07CF10F20CC9ABB0041BE06 /* LemonMilk.otf */; };
 		D89DA85BA115CFA555ED8AC6 /* libPods-multi_path.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B833461B8F7AE6A48BA6CB /* libPods-multi_path.a */; };
+		E57161B020CCAA16000C9CF0 /* AbitaryStuff.c in Sources */ = {isa = PBXBuildFile; fileRef = E57161AF20CCAA16000C9CF0 /* AbitaryStuff.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		B060B7EC20BC0624001FD0CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B060B7F320BC063F001FD0CE /* multi_path.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = multi_path.entitlements; sourceTree = "<group>"; };
 		C07CF10F20CC9ABB0041BE06 /* LemonMilk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilk.otf; sourceTree = "<group>"; };
+		E57161AE20CCAA16000C9CF0 /* AbitaryStuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbitaryStuff.h; sourceTree = "<group>"; };
+		E57161AF20CCAA16000C9CF0 /* AbitaryStuff.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AbitaryStuff.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 				B060B7EC20BC0624001FD0CE /* main.m */,
 				B030E1F420BC0864000CDD4C /* sploit.h */,
 				B030E1F520BC0864000CDD4C /* sploit.c */,
+				E57161AE20CCAA16000C9CF0 /* AbitaryStuff.h */,
+				E57161AF20CCAA16000C9CF0 /* AbitaryStuff.c */,
 				B00730BB20C723AE005995FA /* offsets.m */,
 				B00730BD20C7273C005995FA /* offsets.h */,
 				83B0727420CC615700F17CA6 /* Execute.c */,
@@ -243,6 +248,7 @@
 				B060B7E220BC0624001FD0CE /* ViewController.m in Sources */,
 				B060B7ED20BC0624001FD0CE /* main.m in Sources */,
 				B00730BC20C723AE005995FA /* offsets.m in Sources */,
+				E57161B020CCAA16000C9CF0 /* AbitaryStuff.c in Sources */,
 				B060B7DF20BC0624001FD0CE /* AppDelegate.m in Sources */,
 				83B0727620CC615700F17CA6 /* Execute.c in Sources */,
 			);
