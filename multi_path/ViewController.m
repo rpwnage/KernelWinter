@@ -10,16 +10,12 @@
 #import "../Pods/FallingSnow/FallingSnow/FallingSnow.h"
 #import "../Pods/FallingSnow/FallingSnow/XMASFallingSnowView.h"
 #import "../Pods/FallingSnow/FallingSnow/UIView+XMASFallingSnow.h"
+#include <sys/wait.h>
+#include <spawn.h>
 
-
-
-
-
-
-
+#include <sys/xattr.h>
 
 @interface ViewController ()
-
 
 
 
@@ -34,7 +30,8 @@
       [snowOverlay beginSnowAnimation];
   [self.SpinningWheel startAnimating];
     go();
-    _Console.text = [_Console.text stringByAppendingString:@"\nftp0 done!"];
+    //_Console.text = [_Console.text stringByAppendingString:@"\nftp0 done!"];
+    [self Console_after_sploit];
 }
 
 
@@ -44,4 +41,31 @@
 }
 
 
+- (int) Console_after_sploit {
+    NSLog(@"test");
+    self.Console.text = [_Console.text stringByAppendingString:@"\nExploit runned sucessfully!"];
+    self.Console.text = [_Console.text stringByAppendingString:@"\nRunning external Objective C Files, for testing purposes..."];
+    [self start_SFTP];
+    return 0;
+}
+
+- (void) test_read {
+    NSFileManager *filemgr;
+    NSString *currentpath;
+    NSArray *filelist;
+    int i;
+    filemgr = [NSFileManager defaultManager];
+    filelist = [filemgr contentsOfDirectoryAtPath: @"/bin/" error: nil];
+    NSInteger *count = [filelist count];
+    for (i = 0; i < count; i++)
+       // NSLog (@"%@", [filelist objectAtIndex: i]);
+        self.Console.text = [_Console.text stringByAppendingString:(@"\n %@", [filelist objectAtIndex: i])];
+
+}
+
+int start_SFTP(){
+
+}
+
 @end
+

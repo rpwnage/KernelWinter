@@ -7,21 +7,29 @@
 //
 #include <dirent.h>
 #include <stdio.h>
-void run_arb() {
-    // printf() displays the string inside quotation
-    printf("Hello, World!");
+
+/*
+
+int list_bin_files() {
+    DIR *d;
+    struct dirent *dir;
+    d = opendir("/bin/");
+    if (d)
+    {
+        while ((dir = readdir(d)) != NULL)
+        {
+            printf("%s\n", dir->d_name);
+        }
+        closedir(d);
+    }
+    return 0;
 }
 
-void list_bin_files() {
-        DIR *d;
-        struct dirent *dir;
-        d = opendir("/bin/");
-        if (d)
-        {
-            while ((dir = readdir(d)) != NULL)
-            {
-                printf("%s\n", dir->d_name);
-            }
-            closedir(d);
-        }
+ */
+
+int run_arb() {
+    // printf() displays the string inside quotation
+    printf("C File runned");
+    return 0;
 }
+

@@ -1003,6 +1003,5 @@ void go() {
     
     //external function come here
   run_arb();
-    list_bin_files();
 }
 

@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-void run_arb(void);
-void list_bin_files(void);
+int run_arb(void);
+int list_bin_files(void);
 
 #endif /* AbitaryStuff_h */
