@@ -5,7 +5,7 @@
 //  Created by Ian Beer on 5/28/18.
 //  Copyright © 2018 Ian Beer. All rights reserved.
 //
-
+#include "sploit.h"
 #import "ViewController.h"
 #import "../Pods/FallingSnow/FallingSnow/FallingSnow.h"
 #import "../Pods/FallingSnow/FallingSnow/XMASFallingSnowView.h"
@@ -22,6 +22,7 @@
       [self.view addSubview:snowOverlay];
       [snowOverlay beginSnowAnimation];
   [self.SpinningWheel startAnimating];
+    go();
 }
 
 
