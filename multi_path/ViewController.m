@@ -41,17 +41,19 @@
 }
 
 
+
+- (void)Execute_Abitary_M_Code  {
+    NSLog(@"Execution of arbitary code started");
+}
+
 - (int) Console_after_sploit {
     NSLog(@"test");
     self.Console.text = [_Console.text stringByAppendingString:@"\nExploit runned sucessfully!"];
     self.Console.text = [_Console.text stringByAppendingString:@"\nRunning external Objective C Files, for testing purposes..."];
-    [self start_SFTP];
+    [self Execute_Abitary_M_Code];
     return 0;
 }
 
-void start_SFTP(){
-
-}
 
 @end
 
